@@ -76,177 +76,85 @@
     <!-- Banner Area End -->
 
   
-    div class="section-top-border">
-                <h3 class="title_color">ORDER NOW</h3>
-                <div class="row food-item">
-                   <style>
-input[type="email"]:valid{
-        outline: 2px solid green;
-    }
-    input[type="email"]:invalid{
-        outline: 2px solid red;
-    }
-	input[type="mobile"]:valid{
-        outline: 2px solid green;
-    }
-    input[type="mobile"]:invalid{
-        outline: 2px solid red;	
-    }
-	input[type=submit]{
-	cursor: pointer;
-    background-color: #45a049;
+    
+    
+    <!-- Start Align Area -->
+    <div class="whole-wrap">
+        <div class="container">
+            <div class="section-top-border">
+             
+            </div>
             
-	}
-*{
-	margin: 5px;
-	padding: 0px;
-	margin bottom: 10px;
-	box-sizing: border-box;
-	font-family: ;
-}
+                
+                <div class="row">
 
-header{
-	background-color: pink ;
-	height: auto;
-	background-size: cover;
-	background-position: center;
-}
-
-ul{ 
-   float: right;
-   list-style-type: none
-   margin-top: 60px;
-   margin-bottom
-}
-	 
-ul li{
-	display: inline-block;
-}
-ul li a{
-	text-decoration: none;
-	color: #acsas;
-	padding: 5px 20px;
-	border: 1px solid transparent;
-	transition 0.6s ease;
-	border-radius: 4px; 
-}
-
-
-
-
-ul li a:hover{
-	background-color: #fff;
-	color: #000;
-}
-
-li{
-	font-size: 20px;
-	
-}
-
-</style>
-<script>
-function validateform() {
-                var name = document.reg_form.uname.value;
-
-                if (name === null || name === "") {
-                    window.alert("name can't be left blank");
-					document.getElementById("un").focus();
-                    return false;
-					}     
-				var name = document.reg_form.lname.value;
-
-                if (name === null || name === "") {
-                    window.alert("lastname can't be left blank");
-					document.getElementById("um").focus();
-                    return false;
-                }
-				var mob_num = document.reg_form.mobile.value;
-                if (isNaN(mob_num)) {
-                    document.getElementById("mob").innerHTML = "Enter Numeric value only";
-                    document.getElementById("ph").focus();
-					return false;
-                } else if (mob_num.length !== 10) {
-                    document.getElementById("mob").innerHTML ="Mobile number should be of 10 digits";
-                    document.getElementById("ph").focus();
-					return false;
-                } else {
-				    document.getElementById("mob").innerHTML = "";
-                    return true;
-                }
-				}
-				
-var date = document.getElementById("mydate").value;
-        alert(date);
-	var datetime = document.getElementById("mydatetime").value;
-        alert(datetime);
-		
-	var email = document.getElementById("myemail").value;
-        alert(email);
-	 var month = document.getElementById("mymonth").value;
-        alert(month);
-	var time = document.getElementById("mytime").value;
-        alert(time);
-		
-</script>
-
-
-          
-<body>
- <header>
-
-<div style="margin: auto; display: table;">
-	
-	<form name="reg_form" onsubmit="return validateform()"  >
-	
-<div style="width: 400px;">
-</div>
-<div style="padding-bottom: 18px;font-size : 24px;"><font color="black">ORDER NOW</font></div>
-<div style="display: flex; padding-bottom: 18px;width : 450px;">
-<div style=" margin-left : 0; margin-right : 1%;  width : 49%;"><font color="black"><label>First name</label><span style="color: red;"> *</span></font><br/>
-<input type="text"  name="uname" id="un" value=""  style="width: 100%;"  />
-</div>
-<div style=" margin-left : 1%; margin-right : 0; width : 49%;"><font color="black"><label>Last name</label><span style="color: red;"> *</span></font><br/>
-<input type="text"  name="lname"  id="um" value=""  style="width: 100%;"  />
-</div>
-</div><div style="padding-bottom: 18px;"><font color="black"><label>Phone</label><span style="color: red;"> *</span></font><br/>
-<input type="text" name="mobile"  value="" id="ph"   style="width : 200px;"  />
-</div>
-<div style="padding-bottom: 18px;"><font color="black">Email<span style="color: red;"> *</span></font><br/>
-<input type="email" name="email" value="" id="myemail"  /><br>
-</div>
-<div style="padding-bottom: 18px;"><font color="black">arrival date and time<span style="color: red;"> *</span></font><br/>
-<input type="datetime-local" id="mydatetime"  /><br>
-<div style="padding-bottom: 18px;"><font color="black">Adress</font><br/>
-<input type="number" id="" name="" style="width : 70px;" />
-</div>
-<div style="padding-bottom: 18px;"><font color="black">Number of order</font><br/>
-<input type="number" id="" name="" style="width : 70px;" />
-</div>
-<div class="submit" style="padding-bottom: 18px;"><input name="summitbtn" value="register" type="submit"/></div>
-</form>
-<font color="#fff"><span id="mob"></span><br>
-</div>
-</body>
-
-<script>
-var date = new Date();
-
-var day = date.getDate();
-var month = date.getMonth() + 1;
-var year = date.getFullYear();
-
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day;
-
-var today = year + "-" + month + "-" + day;       
-document.getElementById("mydate").value = today;
-
-</script> 
+            </div>
+            
+            <div class="section-top-border">
+                
+           
+                    
+            <div class="section-top-border">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+					
+                        <h1 class="mb-30 title_color">Booking Form</h1>
+                        <form action="#">
+                            <div class="mt-10">
+                                <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
+                            </div>
+                            <div class="mt-10">
+                                <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
+                            </div>
+                            <div class="mt-10">
+                                <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
+                            </div>
+                            <div class="mt-10">
+                                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required class="single-input">
+                            </div>
+                            <div class="input-group-icon mt-10">
+                                <div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+                                <input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
+                            </div>
+                            <div class="input-group-icon mt-10">
+                                <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                                <div class="form-select" id="default-select">
+                                    <select>
+                                        <option value="1">City</option>
+                                        <option value="1">panjim</option>
+                                        <option value="1">Dilli</option>
+                                        <option value="1">kerla</option>
+                                        <option value="1">bangloru</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group-icon mt-10">
+                                <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                <div class="form-select" id="default-select2">
+                                    <select>
+                                        <option value="1">Country</option>
+                                        <option value="1">kerla</option>
+                                        <option value="1">Canacona</option>
+                                        <option value="1">Galgibag</option>
+                                        <option value="1">maharastra</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </form>
+                    </div>
+                   
+                        
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-   
+        </div>
+    </div>
+    <!-- End Align Area -->
+
     <!-- Footer Area Starts -->
     <footer class="footer-area">
         <div class="footer-widget section-padding">
